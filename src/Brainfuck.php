@@ -1,6 +1,8 @@
 <?php
     namespace Rumd3x\Brainfuck;
-    
+
+    use Exception;
+
     class Brainfuck {
 
         public static function encode($string) {            
@@ -65,14 +67,3 @@
         }
 
     }
-
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
-
-    $time = microtime(true);
-
-    echo Brainfuck::encode('Hello World!');
-    // echo Brainfuck::decode("++++++++++[>+++++++>++++++++++>+++++++++++>+++++++++++>+++++++++++>+++>+++++++++>+++++++++++>+++++++++++>+++++++++++>++++++++++>+++<<<<<<<<<<<<-]>++.>+.>--.>--.>+.>++.>---.>+.>++++.>--.>.>+++.");
-
-    var_dump(microtime(true) - $time);
