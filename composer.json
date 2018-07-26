@@ -1,0 +1,26 @@
+{
+    "name": "rumd3x/php-queues",
+    "description": "A simple driver for managing queues in php.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rumd3x",
+            "email": "edmurcardoso@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+	"require": {
+        "php": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rumd3x\\Brainfuck\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "master"
+        }
+    }
+}
