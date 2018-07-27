@@ -38,8 +38,8 @@
             $bf .= $pretty ? PHP_EOL.$pretty_spacer.str_repeat("<", $move_amount)."-".PHP_EOL."]" : str_repeat("<", $move_amount)."-]";
 
             foreach($cell_data as $data) {
-                if ($data === ".") {
-                    $bf .= ".";
+                if (!is_array($data)) {
+                    $bf .= $data;
                     continue;
                 }
                 $diff = $data['not_rounded'] - $data['rounded'];
