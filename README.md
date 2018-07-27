@@ -25,6 +25,19 @@ echo Brainfuck::encode("Hello World!");
 ```
 
 
+There's also a second a third optional parameters for the encoding.
+
+The second is for replacing non-ASCII characters.
+
+And the third is for generating an minified or pretty-printed version of the code.
+```php
+use Rumd3x\Brainfuck\Brainfuck;
+
+echo Brainfuck::encode("Some ASCII: ABC+ŤĎ and some non-ASCII: Ąąśćł.'", true); // will replace non-ascii with their ascii counterpart 
+echo Brainfuck::encode("Prettifying'", false, true); // will replace non-ascii with their ascii counterpart 
+```
+
+
 ### Decoding
 ```php
 use Rumd3x\Brainfuck\Brainfuck;
