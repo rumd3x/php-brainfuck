@@ -34,7 +34,7 @@ And the third is for generating an minified or pretty-printed version of the cod
 use Rumd3x\Brainfuck\Brainfuck;
 
 echo Brainfuck::encode("Some ASCII: ABC+ŤĎ and some non-ASCII: Ąąśćł.'", true); // will replace non-ascii with their ascii counterpart 
-echo Brainfuck::encode("Prettifying'", false, true); // will replace non-ascii with their ascii counterpart 
+echo Brainfuck::encode("Prettifying'", false, true); // will output pretty printed brainfuck code
 ```
 
 
