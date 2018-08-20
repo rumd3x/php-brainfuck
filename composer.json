@@ -17,10 +17,5 @@
         "psr-4": {
             "Rumd3x\\Brainfuck\\": "src/"
         }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "master"
-        }
     }
 }
