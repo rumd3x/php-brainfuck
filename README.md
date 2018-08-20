@@ -5,9 +5,7 @@ A nice PHP Utility made out of boredom for encoding a string into brainfuck code
 To install via composer add this to your composer.json
 ```json
 "minimum-stability": "dev",
-"repositories": [
-	{ "type": "git", "url": "https://github.com/rumd3x/php-brainfuck.git" }
-]
+"prefer-stable": true
 ```
 And then run
 ```sh
