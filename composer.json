@@ -1,7 +1,7 @@
 {
     "name": "rumd3x/php-brainfuck",
     "description": "A nice PHP Utility made out of boredom for encoding a string into brainfuck code and vice-versa.",
-    "type": "project",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
