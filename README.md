@@ -2,14 +2,9 @@
 A nice PHP Utility made out of boredom for encoding a string into brainfuck code and vice-versa.
 
 ## Installation
-To install via composer add this to your composer.json
-```json
-"minimum-stability": "dev",
-"prefer-stable": true
-```
-And then run
+To install via composer just run
 ```sh
-  composer require "rumd3x/php-brainfuck:*"
+  composer require rumd3x/php-brainfuck
 ```
 
 
