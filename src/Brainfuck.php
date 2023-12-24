@@ -65,8 +65,8 @@
                 if ($char === '>') $pointer++;
                 if ($char === '<') $pointer--;
                 if (!isset($cells[$pointer])) $cells[$pointer] = 0;
-                if ($char === '+') $cells[$pointer]++;
-                if ($char === '-') $cells[$pointer]--;
+                if ($char === '+') $cells[$pointer] = self::_truemod($cells[$pointer] + 1, 256);
+                if ($char === '-') $cells[$pointer] = self::_truemod($cells[$pointer] - 1, 256);
                 if ($char === '.') $result .= chr($cells[$pointer]);
                 if ($char === ']') {
                     $close_pos = $p;
@@ -261,4 +261,7 @@
             return $text;
         }
 
+        private static function _truemod($num, $mod) {
+            return ($mod + ($num % $mod)) % $mod;
+        }
     }
